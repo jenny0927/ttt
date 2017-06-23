@@ -5,7 +5,7 @@ const Header =() => (
 			<div className='navbar-header'>
 				<a className='navbar-brand' href='#'>500px Searcher</a>
 				<ul className='nav navbar-nav'>
-					<li className='active'><a href='#'>Search</a></li>
+					<li className='active'><a href='https://500px.com/'>Search</a></li>
 				</ul>
 			</div>
 		</nav>

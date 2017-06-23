@@ -1,11 +1,10 @@
 import React from 'react';
 import TodoInput from './TodoInput'
 
-class TodoList extends React.Component{
+export default class TodoList extends React.Component{
 	constructor() {
 		super();
 
-		// this.items= []
 		this.state = {
 			items: []
 		};
@@ -40,7 +39,6 @@ class TodoList extends React.Component{
 }
 
 class TodoItem extends React.Component{
-	
 	render() {
 		return <li className="alert alert-success" style ={{
 			textDecoration: this.props.done? 'line-through': 'none'}}> 
@@ -50,5 +48,3 @@ class TodoItem extends React.Component{
 		</li>;
 	}
 }
-
-export default TodoList

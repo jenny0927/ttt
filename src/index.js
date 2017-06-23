@@ -28,7 +28,7 @@ class DateDispaly extends React.Component{
 
 class SubHeader extends React.Component{
 	render() {
-		return <h3> Todo List</h3>;
+		return <h2> Todo List</h2>;
 	}
 }
 
