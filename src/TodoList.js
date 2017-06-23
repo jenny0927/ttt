@@ -40,10 +40,7 @@ class TodoList extends React.Component{
 }
 
 class TodoItem extends React.Component{
-	constructor() {
-		super();
-		
-	}
+	
 	render() {
 		return <li className="alert alert-success" style ={{
 			textDecoration: this.props.done? 'line-through': 'none'}}> 

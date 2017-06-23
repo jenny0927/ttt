@@ -11,10 +11,13 @@ li
 {
 	text-align: right;
 }
-/*
-table{
 
+table {
+/*
 	border: 2px solid grey;
     border-radius: 15px;
-
-}*/
+*/  margin-top: 50px;
+	background-color: lightblue;
+	text-align: center;
+	
+}

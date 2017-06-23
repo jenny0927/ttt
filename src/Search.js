@@ -17,20 +17,25 @@ export default class Search extends React.Component{
 		fetch(apiUrl)
 			.then(response => response.json())
 			.then(json =>{
+				console.log(json);
+				console.log( this);
 				this.setState({ photos: json.photos });
 			})
 			.catch(error => {
-				console.log(error);
-			})
+				console.error(error);
+			});
 	}
 	
 	render(){
 		const { photos } = this.state;
 		return (
 			<div>
-				
+				<div style={{
+						marginBottom: '20px'
+					}}
+				>
 					<SearchForm onSearch = {this.search} />
-				
+				</div>
 					<Thumbnails photos={photos} />
 			</div>
 		);
