@@ -40,12 +40,16 @@ class TodoList extends React.Component{
 }
 
 class TodoItem extends React.Component{
+	constructor() {
+		super();
+		
+	}
 	render() {
-		return <li style ={{
+		return <li className="alert alert-success" style ={{
 			textDecoration: this.props.done? 'line-through': 'none'}}> 
-
-			{this.props.name} 
-			<a href='#' onClick={this.props.onToggleDone}>{ this.props.done ? 'Mark as not done' : 'Mark as done'}</a>
+			
+			{this.props.name} &nbsp;&nbsp;
+			<a href='#' onClick={this.props.onToggleDone}>{ this.props.done ? 'UNDO' : 'DONE'}</a>
 		</li>;
 	}
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TodoInput extends React.Component{
+export default class TodoInput extends React.Component{
 	handleSubmit(event){
 		event.preventDefault();
 		this.props.onAddItem(this.refs.input.value);
@@ -9,11 +9,11 @@ class TodoInput extends React.Component{
 	render(){
 		return (
 			<form onSubmit={this.handleSubmit.bind(this)}>
-			<input type ="text" ref="input" />
-			<button> Add </button>
+			<input className="alert alert-success" type ="text" ref="input" />
+			<button className="btn btn-primary"> Add </button>
+			
 			</form>
 		);
 	}
 }
 
-export default TodoInput;
